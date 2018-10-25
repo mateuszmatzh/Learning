@@ -1,0 +1,58 @@
+*{
+    font-family: verdana;
+    margin: 0;
+}
+
+body{
+    background: #eee;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex-container{
+    display: flex;
+    background: #fff
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: center;
+    height: 800px;
+}
+
+/* flex-flow: row / row-reverse / column / column-reverse */
+
+.box{
+    height: 100px;
+    flex: 0 0 100px;
+}
+
+.one{
+    background: red;
+}
+
+.two{
+    background: blue;
+}
+
+.three{
+    background: green;
+}
+
+/* 
+    flex-shrink zmienia proporcje kolumn dopiero przy zmniejszaniu okna przeglądarki.
+    flex-grow w klasie .box ustanawia równe proporcje dla wszystkich kolumn, niezmnienne przy zmniejszaniu okna przeglądarki.
+     
+    flex-wrap: wrap; w .flex-container zawija kolumnę do kolejnej linijki.
+    flex-wrap: wrap-reverse zawija ostatni element do góry.
+    flex-wrap: nowrap nie zawija :)
+
+    flex-basis: 200px - zmniejszanie do 200px, potem zawija w dół.
+
+    .box
+    flex: 1 0 200px;
+
+    */
+
