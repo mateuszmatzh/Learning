@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Mathematical Operators</title>
+    </head>
+
+    <body>
+
+        <h2>Basic Mathematical Operators</h2>
+            
+        <p>= + - / *</p>
+
+        <h4>Try in Google Developer Tools:</h4>
+
+        <p>var myVar = 5</p>
+        <p>myVar</p>
+        <p>5</p>
+        <p>5 + 5</p>
+        <p>10</p>
+        <p>myVar + 10</p>
+        <p>15</p>
+        <p>myVar = myVar + 10</p>
+        <p>15</p>
+        <p>myVar</p>
+        <p>15</p>
+        <p>myVar - 3</p>
+        <p>12</p>
+        <p>myVar = myVar - 5</p>
+        <p>10</p>
+        <p>myVar</p>
+        <p>10</p>
+        
+        
+        <br>
+        <p>myVar</p>
+        <p>15</p>
+        <p>myVar += 5</p>
+        <p>20</p>
+        <p>myVar</p>
+        <p>20</p>
+        <p>myVar -= 10</p>
+        <p>10</p>
+        <p>myVar</p>
+        <p>10</p>
+        <!-- = zastępuje myVar -->
+        
+        
+        <br>
+        <p>myVar</p>
+        <p>25</p>
+        <p>myVar ++ 1</p>
+        <p>26</p>
+        <p>myVar</p>
+        <p>27</p>
+        <p>++myVar</p>
+        <p>28</p>
+        
+        
+        <br>
+        <p>var myVar = "Matzh</p>
+        <p>document.write(myVar)</p>
+        <!-- przeglądarka wyświetla 'Matzh'-->
+        <p>console.log(myVar)</p>
+        <p>Matzh</p>
+        <p>document.write(10)</p>
+        <!-- przeglądarka wyświetla 'Matzh10'-->
+        <p>console.log(50)</p>
+        <p>50</p>
+        <p>console.log(20*5)</p>
+        <p>100</p>
+        <p>document.wrote(20 / 5)</p>
+        <!-- przeglądarka wyświetla 'Matzh104' -->
+        <br>
+
+        <h2>Booleans in JS</h2>
+
+        <p>var iLikeMeat = true //bez ""!!!</p>
+            <p>iLikeMeat</p>
+            <p>true</p>
+            <p>7 > 5</p>
+            <p>true</p>
+            <p>7 < 5</p>
+            <p>false</p>
+            <p>7 = 7</p>
+            <p>-- Uncaught ReferenceError: ...</p>
+            <p>7 == 7</p>
+            <p>true</p>
+            <br>
+            <p>Boolean(7 < 5)</p>
+            <p>true</p>
+            <p>Boolean(6)</p>
+            <p>true</p>
+            <p>Boolean("hello")</p>
+            <p>true</p>
+            <p>Boolean("")</p>
+            <p>false</p>
+            <br>
+
+        <h2>Else If Statements</h2>
+            <p>var myAge = 29;</p>
+            <p>if (myAge > 30){</p>
+            <p>         document.write("you are over 30!");</p>
+            <p>} else if (myAge > 20){</p>
+                <p>         document.write("you are over 20!");</p>
+            <p>} else if (myAge > 10){</p>
+                <p>         document.write("you are over 10!");</p>
+            <p>} else{</p>
+                <p>         document.write("you are not over 10!")</p>
+            <p>}</p>
+            <br>
+
+        <h2>Comparison Operators</h2>
+            <p>var x = 5</p>
+            <p>x > 4</p>
+            <p>true</p> 
+            <p>x >= 5</p>
+            <p>true</p>
+            <p>x < 5</p>
+            <p>false</p>
+            <p>x == 5</p>
+            <p>true</p>
+            <p>x = "5"</p>
+            <p>x == 5</p>
+            <p>true</p>
+            <p>x === 5</p>
+            <p>false</p>
+            <br>
+            <p>x != 4 //!-- x nie jest 4</p>
+            <p>true</p>
+            <p>x != 5</p>
+            <p>false</p>
+            <br>
+
+        <h2>Logical Operators</h2>
+            <p>var myAge = 25;</p>
+            <p>if (myAge >= 18 && <!-- another condition --> myAge <= 30)</p>
+            <p>     document.write("You can come, you cool dude");</p>
+            <p>} else{</p>
+            <p>     document.write("You ain't coming!";)</p>
+            <p>}</p>
+            <br>
+            <p>var myAge = 35;</p>
+            <p>if (myAge < 18 || myAge > 30 || myAge === 25){</p>
+            <p>     document.write("You ain't coming!);</p>
+            <p>} else{</p>
+            <p>     document.write("You can come, you cool dude");</p>
+            <p>}</p>
+            <br>
+
+        <h2>While Loops</h2>
+            <p>var age = 5;</p>
+            <p>while (age < 10) {</p>
+                <p>     console.log("Your age is less than 10");</p>
+                <p>     age++;</p>
+            <p>}</p>
+                <p>document.write("Your are now over 10");</p>
+            <br>
+
+        <h2>For Loops</h2>
+            <p>var links = document.getElementsByTagName("a")</p>
+            <p>for (i = 1; i < link.length; i++) {</p>
+            <p>     console.log("this is link number" + i);</p>
+            <p>}</p>
+            <p>document.write("All links now looped");</p>
+            <br>
+            <p>In Console you can see:</p>
+            <ul>
+                <li>this is link number1</li>
+                <li>this is link number2</li>
+                <li>this is link number3</li>
+                <li>this is link number4</li>
+                <li>this is link number5</li>
+            </ul>
+            <br>
+
+        <h2>Break & Continue</h2>
+            <p>for (i = 0; i < 10; i++) {</p>
+            <p>     if(i === 5 || i === 3){</p>
+            <p>           continue;</p>
+            <p>}</p>
+            <p>console.log(i);</p>
+            <p>if(i === 7){</p>
+            <p>     break;</p>
+            <p>}</p>
+            <p>}</p>
+            <p>console.log("I have broken out of the loop");</p>
+            <br>
+            <p>W konsoli wyświetla się lista 0 1 2 4 6 7 i komunikat "I have broken out of the loop.</p>
+            <br>
+
+        <h2>Practical Example using Loops</h2>
+            <p>var links = document.getElementsByTagName("a);</p>
+            <p>for(i = 0; i < links.length; i++){</p>
+            <p>     links[i].className = "link-" + i;</p>
+            <br>
+
+        <h2>Functions</h2>
+            <p>function getAverage (a,b){</p>
+            <p>     var average = (a + b) / 2;</p>
+            <p>     console.log(average);</p>
+            <p>}</p>
+            <p>getAverage(7,12);</p>
+            <br>
+   
+        <h2>Variable Scope</h2>
+            <p>var foo = 20; -- Global variable</p>
+            <p>function myFuncion (){</p>
+            <p>     var bar = 10; -- Local Variable</p>
+            <p>}</p>
+                <br>
+            <p>function getAverage (a,b){</p>
+            <p>     var average = (a + b) / 2; // local variable</p>
+            <p>     console.log(average);</p>
+            <p>     return average;</p>
+            <p>}</p>
+            <br>
+            <p>var myResult = getAverage(7,11); // global variable</p>
+            <p>function logResult(){</p>
+            <p>     console.log("the average is " + myResult + " inside the function");</p>
+            <p>}</p>
+            <p>logResult();</p>
+
+
+
+
+
+    </body>
+
+</html>

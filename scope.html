@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript # variable scope</title>
+</head>
+
+<body>
+
+    <h1>Learning JavaScript</h1>
+    
+    <p>Wartość lokalna nie jest widoczna poza swoim zasięgiem.</p>
+    <p>Wartość globalna jest widoczna w zasięgu lokalnym.</p>
+    
+
+
+
+    <script>
+
+        var a = "zmienna globalna";
+
+        function one() {
+            var a = "zmienna lokalna";
+            console.log(a);
+        }
+    
+
+        one ();
+
+        console.log(a);
+
+        console.log("------------");
+
+    </script>
+
+<!-- 
+
+    <script>
+        var a = "nothing";
+
+        if (true) {
+            var a = "coś";
+        }
+
+        console.log(a)
+    
+    </script>
+
+    Zmienna a w zakresie globalnym do której przypisano string "nic". Potem instrukcja warunkowa, która zostanie wykonana. 
+    Wywołano zmienną a z wartością "nic" w zasięgu globalnym. 
+
+    "let" i "const" działają nieco inaczej niż var. 
+    
+-->
+
+    <p>Zmienna globalna jest dostępna w zasięgu globalnym i we wszystkich zasięgach lokalnych, ale może zostać przysłonięta w zasięgu lokalnym przez taką samą zmienną.</p>
+    <p>Zmienna lokalna jest dostępna tylko w zasięgu lokalnym i zasięgach potomnych, ale może zostać przysłonięta w zasięgu lokalnym przez taką samą zmienną.</p>
+
+    <!--
+
+        <script>
+            
+            var a = "0";
+
+            function one () {
+                var a = "1";   //zmienna lokalna
+                console.log("zmienna w funkcji 1:" + a);
+
+                function two(){
+                    var a = "2";
+                    console.log("zmienna w funkcji 2:" + a);
+
+                    function three() {
+                        var a = "3";
+                        console.log("zmienna w funkcji 3:" + a");        
+                    }
+                    three()
+                }
+                two ()
+            }
+            one()
+            console.log("zmienna w zasięgu globalnym: " + a);
+
+        </script>
+
+
+
+    -->
+
+
+</body>
+
+
+</html>
