@@ -1,2 +1,5 @@
-#GitHub training
-Pierwsze kroki z GitHubem.# github-training
+_________________________________________________
+
+This is my repository to train and learn :)
+
+_________________________________________________
