@@ -1,0 +1,77 @@
+* {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  box-sizing: border-box;
+}
+.container--cards {
+  background-color: #f2f2f2;
+  min-height: 10rem;
+  border: 3px solid blue;
+}
+.card {
+  height: 100%;
+  font-size: 5rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all .2s;
+}
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card--1 {
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+.card--2 {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+.card--3 {
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+.card--4 {
+  background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+}
+.card--5 {
+  background-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
+}
+.card--6 {
+  background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
+}
+.card--7 {
+  background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+}
+.card--8 {
+  background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+}
+
+/* -------------
+---- FLEXBOX ---
+------------  */
+
+.container {
+  align-items: center;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: nowrap;
+  height: 60vh;
+  justify-content: center;
+}
+
+.item {
+  max-width: 130px;
+}
+
+.item--4 {
+  order: -2;
+}
+
+.item--2 {
+  order: -1;
+}
+
+.item--3 {
+  order: 1;
+  align-self: stretch;
+}

@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 100px 3fr 2fr;
+    grid-template-rows: 150px 10fr 3fr 3fr; 
+    grid-template-areas: "logo text image menu" ". text image menu" ". text image footer" "sidebar sidebar image footer";
+}
+
+.logo {
+    background-color: rgb(224, 224, 224);
+    grid-area: logo;
+    text-align: center;
+}
+
+.logo__headline {
+    margin-top: 50%;
+}
+
+.text {
+    background-color: white;
+    grid-area: text;
+}
+
+.text__headline {
+    color: black;
+    font-size: 4rem;
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    position: relative;
+    left: 50%;
+    top: 60%;
+}
+
+.image {
+    background-image: url(https://images.unsplash.com/photo-1519338437444-c1b5ebea066f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cf3d5ebb5f0641ba15d6e98faf8bfe36&auto=format&fit=crop&w=500&q=80);
+    background-size: cover;
+    grid-area: image;
+}
+
+.menu {
+    background-color: white;
+    grid-area: menu;
+    font-size: 2rem;
+    margin-left: 20%;
+    margin-top: 20%;
+    letter-spacing: 0.3rem;
+    line-height: 150%;
+}
+
+.footer {
+    background-color: rgb(224, 224, 224);;
+    grid-area: footer;
+}
+
+.sidebar {
+    background-color: rgb(224, 224, 224);
+    grid-area: sidebar;
+}

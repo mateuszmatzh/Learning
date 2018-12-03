@@ -1,0 +1,63 @@
+* {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  box-sizing: border-box;
+}
+.container--cards {
+  background-color: #f2f2f2;
+  min-height: 10rem;
+}
+.card {
+  height: 100%;
+  font-size: 5rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all .2s;
+}
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card--1 {
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+.card--2 {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+.card--3 {
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+.card--4 {
+  background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+}
+
+/* -------------
+---- GRID  ---
+------------  */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: "jedynka dwojka trojka" "jedynka czworka trojka";
+}
+
+.item {
+}
+
+.item--1 {
+  grid-area: jedynka;
+}
+
+.item--2 {
+  grid-area: dwojka;
+}
+
+.item--3 {
+  grid-area: trojka;
+}
+
+.item--4 {
+  grid-area: czworka;
+}

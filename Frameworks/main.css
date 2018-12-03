@@ -1,0 +1,34 @@
+.container-1 {
+  background-color: red;
+  min-height: 50vh;
+}
+
+.container-2 {
+  background-color: yellow;
+  min-height: 50vh;
+}
+
+.col-1 {
+  background-color: aqua;
+  min-height: 100px;
+}
+
+.col-2 {
+  background-color: green;
+  min-height: 100px;
+}
+
+.col-3 {
+  background-color: azure;
+  min-height: 100px;
+}
+
+.col-4 {
+  background-color: blueviolet;
+  min-height: 100px;
+}
+
+.col-5 {
+  background-color: rosybrown;
+  min-height: 100px;
+}

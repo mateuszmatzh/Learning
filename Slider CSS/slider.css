@@ -1,0 +1,17 @@
+
+.slider {
+    width: 600px;
+    overflow: auto;
+    white-space: nowrap;
+        /* nie bedzie sie zawijac, traktowane jak jeden wiersz */
+    scroll-snap-type: x mandatory;
+        /* mandatory lub proximity */
+    margin: 10% auto;
+}
+
+
+.slider__img {
+    display: inline;
+    scroll-snap-align: center;
+        /* center - start - end */
+}
