@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <h1 class="header__logo">Cahee</h1>
+        <nav>
+            <ul class="header__nav">
+                <li class="header__nav--item active">
+                    <a href="#">Home</a>
+                </li>
+                <li class="header__nav--item">
+                    <a href="#about">About</a>
+                </li>
+                <li class="header__nav--item">
+                    <a href="#services">Services</a>
+                </li>
+                <li class="header__nav--item">
+                    <a href="#gallery">Gallery</a>
+                </li>
+                <li class="header__nav--item">
+                    <a href="#blog">Blog</a>
+                </li>
+                <li class="header__nav--item">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="fresh">
+        <div class="container">
+            <div class="fresh__content">
+                <h2 class="fresh__content--title">Fresh Life</h2>
+                <p class="fresh__content--text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <button class="fresh__content--action">
+                    Get free now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about__background"></div>
+            <div class="about__content">
+                <h1 class="about__content--title">About Us</h1>
+                <p class="about__content--text">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum.<br>
+                    Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="services__background">
+                <h1>Our Services</h1>
+            </div>
+            <div class="services__content">
+                <div class="services__content--box">
+                    <span>Online Shopping</span>
+                    <img src="images/icon-cart.png">
+                </div>
+                <div class="services__content--box">
+                    <span>Quality Product</span>
+                    <img src="images/icon-hand.png">
+                </div>
+                <div class="services__content--box">
+                    <span>Domestic & International Delivery</span>
+                    <img src="images/icon-world.png">
+                </div>
+                <div class="services__content--box">
+                    <span>Well Organized</span>
+                    <img src="images/icon-carrot.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+            <div class="gallery__header">
+                <h1>Gallery</h1>
+                <span>Consectetur adipiscing elit, sed do elusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                    vanlam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </span>            
+            </div>
+            <div class="gallery__grid">
+                <div class="grid__item gallery__grid--img1"></div>
+                <div class="grid__item gallery__grid--img2"></div>
+                <div class="grid__item gallery__grid--img3"></div>
+                <div class="grid__item gallery__grid--img4"></div>
+                <div class="grid__item gallery__grid--img5"></div>   
+            </div>
+            <div class="gallery__button">
+                <p>View more</p>
+            </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter__content">
+                <h4>Subscribe To Us</h4>
+                <span>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</span>
+            </div>
+            <form class="newsletter__form">
+                <input class="newsletter__form--input" type="email" id="mail" name="user_mail" placeholder="Your e-mail" required="">
+                <button class="newsletter__form--button" type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="blog__header">
+                <h1>Blog</h1>
+                <span>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut allquip ex ea commodo consequat. Duls aute irure dolor
+                    in reprehenderit in voluptate velit.
+                </span>
+            </div>
+            <div class="blog__container">
+                <div class="blog__container--box post1">
+                    <div class="box__date">20<br>nov</div>
+                    <div class="box__title">Green Smoothies: Too Much of a Good Thing?</div>
+                    <div class="box__author">By Auskteez - 2 hours ago</div>
+                </div>
+                <div class="blog__container--box post2">
+                    <div class="box__date">14<br>nov</div>
+                    <div class="box__title">Growing Food and a "Thirst" for Innovation</div>
+                    <div class="box__author">By Auskteez - 3 hours ago</div>
+                </div>
+                <div class="blog__container--box post3">
+                    <div class="box__date">10<br>nov</div>
+                    <div class="box__title">Pesticides & Food: What You Need to Know</div>
+                    <div class="box__author">By Auskteez - 6 hours ago</div>
+                </div>
+            </div>
+            <div class="blog__button">
+                <p>View more</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact__header">
+                <h1>Contact</h1>
+                <span>For new projects, ideas, business or anything you'd like to discuss, contact with me!</span>
+            </div>
+            <div class="contact__content">
+
+                <div class="contact__content--form">
+                    <form>
+                        <input class="contact__form--input" placeholder="Your name..." type="text">
+                        <input class="contact__form--input" placeholder="Your email..." type="text">
+                        <input class="contact__form--input" placeholder="Your phone number..." type="tel">
+                        <input class="contact__form--input contact__form--input-message" placeholder="Your message..." type="text">
+                        <button class="contact__form--button" type="submit">Send</button>
+                    </form>
+                </div>
+
+                <div class="contact__content--address">
+                    <span class="contact__content--address-main">Address</span><br>
+                    <span>123 City name, Street, City, Country</span><br><br>
+                    <span class="contact__content--address-main">Email</span><br>
+                    <span>cahee@domain.com</span><br><br>
+                    <span class="contact__content--address-main">Phone</span><br>
+                    <span>+012 345 6789</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <address class="footer__copyright">® 2015 Company All rights reserved</address>
+        <h1 class="footer__logo">Cahee</h1>
+        <p class="footer__author">Made with <strong>love</strong> by Auskteez</p>
+    </div>
+</footer>
+
+</body>
+</html>
